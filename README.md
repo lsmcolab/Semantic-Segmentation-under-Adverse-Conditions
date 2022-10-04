@@ -42,6 +42,14 @@ Results :100:
 I will show some results.
 ---
 
+
+Code, Datasets, and Simulator
+===
+* Our semantic segmentation code can be downloaded using this link: [Click]().
+* The AWSS dataset can be downloaded using this link: [Click](https://www.kaggle.com/datasets/abdulrahmankerim/semantic-segmentation-under-adverse-conditions).
+* The Silver simulator can be downloaded using this link: [Click]().
+---
+
 Contact :e-mail:
 ===
 * Abdulrahman Kerim - PhD Candidate - Lancaster University - a.kerim@lancaster.ac.uk
