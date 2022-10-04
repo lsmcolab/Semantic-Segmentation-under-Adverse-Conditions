@@ -20,13 +20,37 @@ If you find this code useful for your research, please cite the paper:
 
 Usage :computer:
 ===
-## Contact
+
+
+I will explain how to setup and use our code.
+---
+
+
+Training :hourglass_flowing_sand:
+===
+I will explain how to do the training.
+---
+
+
+Testing :eyes:
+===
+I will explain how to do the texting.
+---
+
+Results :100:
+===
+I will show some results.
+---
+
+Contact :e-mail:
+===
 * Abdulrahman Kerim - PhD Candidate - Lancaster University - a.kerim@lancaster.ac.uk
 * Felipe Chamone - PhD Candidate - Universidade Federal de Minas Gerais - cadar@dcc.ufmg.br
 * Washington Ramos - PhD Candidate - UFMG - washington.ramos@dcc.ufmg.br
 * Leandro Soriano Marcolino - Lecturer at Lancaster University - l.marcolino@lancaster.ac.uk
 * Erickson R. do Nascimento - Principal Investigator - UFMG - erickson@dcc.ufmg.br
 * Richard Jiang - Associate Professor at Lancaster University - r.jiang2@lancaster.ac.uk> 
-
-## Acknowledgements
+---
+Acknowledgements
+===
 Abdulrahman Kerim was supported by the Faculty of Science and Technology - Lancaster University.
