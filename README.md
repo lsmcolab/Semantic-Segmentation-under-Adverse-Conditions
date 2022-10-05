@@ -38,6 +38,20 @@ To reproduce our experiments, please follow these steps:
 ---
 
 
+:hourglass_flowing_sand: Training
+===
+
+xxxxx
+
+---
+
+
+:mag_right: Testing
+===
+
+xxxxx
+
+---
 
 :movie_camera: Datasets and Simulator
 ===
