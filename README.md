@@ -26,12 +26,14 @@ To reproduce our experiments, please follow these steps:
    pip install -r requirements.txt
    ```
 ### 3. Update paths accordeing to your enivorment.
-  - Update this part in main.py:
+  - Update this part in main.py: https://github.com/lsmcolab/Semantic-Segmentation-under-Adverse-Conditions/blob/00b4c76293b6e633e416f7bc45ee7b27dfadd8c8/main.py#L263-L265
+  <!---
     ```bash
     opts.data_root_cs = "/home/kerim/DataSets/SemanticSegmentation/cityscapes"#Update as necessary
     opts.data_root_acdc = "/home/kerim/DataSets/SemanticSegmentation/ACDC"#Update as necessary
     opts.data_root_awss = "/home/kerim/Silver_Project/AWSS"#Update as necessary
     ```
+    -->
   - Update datasets/(AWSS.py, cityscapes.py, and ACDC.py) according to where you store these three datasets.
 ---
 
