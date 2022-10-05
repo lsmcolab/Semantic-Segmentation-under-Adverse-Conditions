@@ -64,7 +64,7 @@ If you find this code useful for your research, please cite the paper:
 ----
 Acknowledgements
 ===
-Abdulrahman Kerim was supported by the Faculty of Science and Technology - Lancaster University.
+This work was funded by the Faculty of Science and Technology of Lancaster University. We thank the High End Computing facility of Lancaster University for the computing resources. The authors would also like to thank CAPES and CNPq for funding different parts of this work.
 
 :shield: License
 ===
