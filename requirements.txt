@@ -1,0 +1,122 @@
+absl-py==1.0.0
+albumentations==1.1.0
+appdirs==1.4.4
+asttokens==2.0.5
+backcall==0.2.0
+Bottleneck==1.3.2
+cachetools==5.1.0
+certifi==2021.10.8
+channelnorm-cuda==0.0.0
+charset-normalizer==2.0.12
+cityscapesScripts==2.2.0
+coloredlogs==15.0.1
+colorthief==0.2.1
+correlation-cuda==0.0.0
+cycler @ file:///tmp/build/80754af9/cycler_1637851556182/work
+decorator==5.1.1
+deepl==1.7.0
+deepml==2.0.0
+efficientnet-pytorch==0.6.3
+executing==0.8.3
+fonttools==4.28.5
+google-auth==2.6.6
+google-auth-oauthlib==0.4.6
+gorilla==0.4.0
+grpcio==1.46.3
+h5py==3.6.0
+humanfriendly==10.0
+idna==3.3
+imageio==2.13.4
+importlib-metadata==4.11.4
+install==1.3.5
+ipdb==0.13.9
+ipython==8.4.0
+jedi==0.18.1
+joblib==1.1.0
+jsonpatch==1.32
+jsonpointer==2.3
+keras @ file:///home/ktietz/ci_310/keras_split_1643826818613/work/keras-2.6.0-py2.py3-none-any.whl
+kiwisolver @ file:///opt/conda/conda-bld/kiwisolver_1638569886207/work
+Markdown==3.3.7
+matplotlib @ file:///tmp/build/80754af9/matplotlib-suite_1647441664166/work
+matplotlib-inline==0.1.3
+mkl-fft==1.3.1
+mkl-random @ file:///tmp/build/80754af9/mkl_random_1626186064646/work
+mkl-service==2.4.0
+mlnotify==1.0.51
+munch==2.5.0
+munkres==1.1.4
+networkx==2.6.3
+nose==1.3.7
+numexpr @ file:///tmp/build/80754af9/numexpr_1640704208950/work
+numpy==1.21.5
+oauthlib==3.2.0
+opencv-python-headless==4.5.4.60
+packaging @ file:///tmp/build/80754af9/packaging_1637314298585/work
+pandas==1.3.5
+parso==0.8.3
+pexpect==4.8.0
+pickleshare==0.7.5
+Pillow==9.0.1
+portalocker==2.4.0
+positional-encodings==6.0.1
+pretrainedmodels==0.7.4
+prompt-toolkit==3.0.30
+protobuf==3.19.3
+ptyprocess==0.7.0
+pure-eval==0.2.2
+pyasn1==0.4.8
+pyasn1-modules==0.2.8
+Pygments==2.12.0
+pyparsing==3.0.6
+PyQtWebEngine==5.12
+pyquaternion==0.9.9
+python-dateutil @ file:///tmp/build/80754af9/python-dateutil_1626374649649/work
+pytorch-fid==0.2.1
+pytorch-ignite==0.4.9
+pytz==2021.3
+PyWavelets==1.2.0
+PyYAML==6.0
+pyzmq==23.2.0
+qrcode==6.1
+qudida==0.0.4
+random-fourier-features-pytorch==1.0.0
+requests==2.27.1
+requests-oauthlib==1.3.1
+resample2d-cuda==0.0.0
+rsa==4.8
+scikit-image==0.19.1
+scikit-learn==1.0.1
+scipy @ file:///tmp/build/80754af9/scipy_1641555001653/work
+seaborn @ file:///tmp/build/80754af9/seaborn_1629307859561/work
+segmentation-models-pytorch==0.2.1
+sip==4.19.13
+six @ file:///tmp/build/80754af9/six_1623709665295/work
+slots==0.4.0
+stack-data==0.3.0
+tensorboard==2.9.0
+tensorboard-data-server==0.6.1
+tensorboard-plugin-wit==1.8.1
+tensorboardX==2.4.1
+threadpoolctl==3.0.0
+tifffile==2021.11.2
+timm==0.4.12
+toml==0.10.2
+torch==1.10.1
+torch-encoding==1.2.2b20220705
+torch-poly-lr-decay @ git+https://github.com/cmpark0126/pytorch-polynomial-lr-decay.git@9251dd7190eccfb1cd08e1ebce52e03cff0cb58a
+torchfile==0.1.0
+torchmetrics==0.6.2
+torchvision==0.11.2
+tornado @ file:///tmp/build/80754af9/tornado_1606942300299/work
+tqdm==4.62.3
+traitlets==5.3.0
+typing==3.7.4.3
+typing_extensions==4.0.1
+urllib3==1.26.9
+visdom==0.1.8.9
+wcwidth==0.2.5
+websocket-client==1.3.3
+Werkzeug==2.1.2
+yacs==0.1.8
+zipp==3.8.0
