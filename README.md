@@ -25,7 +25,7 @@ To reproduce our experiments, please follow these steps:
    cd Semantic-Segmentation-under-Adverse-Conditions
    pip install -r requirements.txt
    ```
-### 3. Update paths accordeing to your enivorment.
+### 3. Update paths accordeing to your enivorment
   - Update this part in main.py: https://github.com/lsmcolab/Semantic-Segmentation-under-Adverse-Conditions/blob/00b4c76293b6e633e416f7bc45ee7b27dfadd8c8/main.py#L263-L265
   <!---
     ```bash
