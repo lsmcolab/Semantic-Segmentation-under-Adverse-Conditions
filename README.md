@@ -24,8 +24,14 @@ To reproduce our experiments, please follow these steps:
    cd Semantic-Segmentation-under-Adverse-Conditions
    pip install -r requirements.txt
    ```
-
-I will explain how to setup and use our code.
+### 3. Update paths accordeing to your enivorment.
+  - Update this part in main.py:
+    ```bash
+    opts.data_root_cs = "/home/kerim/DataSets/SemanticSegmentation/cityscapes"#Update as necessary
+    opts.data_root_acdc = "/home/kerim/DataSets/SemanticSegmentation/ACDC"#Update as necessary
+    opts.data_root_awss = "/home/kerim/Silver_Project/AWSS"#Update as necessary
+    ```
+  - Update datasets/(AWSS.py, cityscapes.py, and ACDC.py) according to where you store these three datasets.
 ---
 
 
