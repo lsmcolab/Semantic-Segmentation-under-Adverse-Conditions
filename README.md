@@ -9,29 +9,25 @@ pervisors trained with multi-task learning, making it both weather and nighttime
 
 ---
 
-Usage :computer:
+:wrench: Environment Setup
 ===
+To reproduce our experiments, please follow these steps:
 
+### 1. Make sure you have the requirements
+
+  - [Python](https://www.python.org/) (>=3.8)
+  - [PyTorch](https://pytorch.org/) (=1.10.1) # Maybe it works with other versions too!
+
+### 2. Clone the repo and install the dependencies
+   ```bash
+   git clone https://github.com/verlab/TextDrivenVideoAcceleration_TPAMI_2022.git
+   cd TextDrivenVideoAcceleration_TPAMI_2022
+   pip install -r requirements.txt
+   ```
 
 I will explain how to setup and use our code.
 ---
 
-
-Training :hourglass_flowing_sand:
-===
-I will explain how to do the training.
----
-
-
-Testing :eyes:
-===
-I will explain how to do the texting.
----
-
-Results :100:
-===
-I will show some results.
----
 
 
 :movie_camera: Datasets and Simulator
