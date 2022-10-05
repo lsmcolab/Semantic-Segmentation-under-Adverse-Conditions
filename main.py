@@ -1,22 +1,25 @@
+# The model is weather and time aware!
+# This models is trained on: AWSS + CS 1:1
+# low level features i.e module.backbone.low_level_features (Atrous Conv.) are frozen when training on CS
+# Multi-task learning two losses Segmentation loss and weather_time loss, propagated separtely.
+# weather awareness just of the Atrous Convolution
+# ------------------------
+# Please note that our code is based on DeepLabV3+ pytorch implementation.
+# --------------------------
+import torch
+import torch.nn as nn
+import numpy as np
+import random
+import os
 from tqdm import tqdm
 import network
 import utils
-import os
-import random
 import argparse
-import numpy as np
-
 from torch.utils import data
-
-# from New_Exps.Ours.network.utils import Weather_Classifier
-from datasets import VOCSegmentation, Cityscapes, ACDC, AWSS
+from datasets import Cityscapes, ACDC, AWSS
 from utils import ext_transforms as et
 from metrics import StreamSegMetrics
-
-import torch
-import torch.nn as nn
 from utils.visualizer import Visualizer
-
 from PIL import Image
 import matplotlib
 import matplotlib.pyplot as plt
@@ -45,7 +48,7 @@ def get_argparser():
     parser.add_argument("--output_stride", type=int, default=16, choices=[8, 16])
 
     # Train Options
-    parser.add_argument("--test_only", action='store_true', default=False)#Change from False to True Kerim
+    parser.add_argument("--test_only", action='store_true', default=False)
     parser.add_argument("--save_val_results", action='store_true', default=True,
                         help="save segmentation results to \"./results\"")
     parser.add_argument("--total_itrs", type=int, default=30e3,
@@ -254,15 +257,12 @@ def main(ACDC_test_class = None,n_itrs=10000000,MODE=12345):
     opts.ACDC_test_class = ACDC_test_class
     opts.finetune = False
     opts.pretrained_model = None
-    # MODE = 0#train on cityscapes
-    # MODE = 1#finetune pretrained cityscapes on AWSS
-    # MODE = 10#test on cityscapes
+    # MODE = 0#train on cityscapes and AWSS
     # MODE = 11#test on cityscapes
-    # MODE = 20#test on acdc
-    # MODE = 21  # test on acdc
-    opts.data_root_cs = "/home/kerim/DataSets/SemanticSegmentation/cityscapes"
-    opts.data_root_acdc = "/home/kerim/DataSets/SemanticSegmentation/ACDC"
-    opts.data_root_awss = "/home/kerim/Silver_Project/Silver_Recordings"
+    # MODE = 21#test on acdc
+    opts.data_root_cs = "/home/kerim/DataSets/SemanticSegmentation/cityscapes"#Update as necessary
+    opts.data_root_acdc = "/home/kerim/DataSets/SemanticSegmentation/ACDC"#Update as necessary
+    opts.data_root_awss = "/home/kerim/Silver_Project/AWSS"#Update as necessary
     opts.total_itrs = n_itrs
     opts.test_class = None
     opts.val_batch_size = 8
@@ -293,9 +293,6 @@ def main(ACDC_test_class = None,n_itrs=10000000,MODE=12345):
     opts.batch_size = 4
     opts.output_stride = 16
     opts.crop_val = True
-    # opts.val_interval = 2
-
-    # opts.num_classes = 11
 
 
     if opts.dataset.lower() == 'voc':
@@ -599,7 +596,6 @@ def main(ACDC_test_class = None,n_itrs=10000000,MODE=12345):
             if cur_itrs >= opts.total_itrs:
                 return
 
-# The model is ours V01
 if __name__ == '__main__':
 
     ACDC_classes = ['rain','fog','snow','night']
@@ -613,47 +609,42 @@ if __name__ == '__main__':
         exit()
     main(MODE=MODE)
 
-# --------------------------------------------------------------- V02 --------------
-# V02: The model is weather and time aware!
-# This models is trained on: AWSS + CS 1:1
-# low level features i.e module.backbone.low_level_features (Atrous Conv.) are frozen when training on CS
-# Multi-task learning two losses Segmentation loss and weather_time loss, propagated separtely.
-# weather awareness just of the Atrous Convolution
-# --------------------------------------------------------------- CS
+# Expected Output
+# =================
+# Cityscapes
+# ------------
 # Overall Acc: 0.939875
 # Mean Acc: 0.825837
 # FreqW Acc: 0.890178
 # Mean IoU: 0.746920
-#
-# [0.95335767 0.72550871 0.88743945 0.50785172 0.44274712 0.60158601 0.87598127 0.87561615 0.70870125 0.89040882]
-# ------------------------------------------------------------------- ACDC
-
+# Per-class IoU: [0.95335767 0.72550871 0.88743945 0.50785172 0.44274712 0.60158601 0.87598127 0.87561615 0.70870125 0.89040882]
+# -------------------------------------------------------------------
+# ACDC
+# ------------
+# ACDC (Rain)
 # Overall Acc: 0.877963
 # Mean Acc: 0.667648
 # FreqW Acc: 0.791779
 # Mean IoU: 0.566379
-#
-# [0.76403344 0.36642211 0.72458654 0.31330346 0.32441966 0.40964191 0.81764442 0.9160704  0.40519023 0.62248053]
-
+# Per-class IoU: [0.76403344 0.36642211 0.72458654 0.31330346 0.32441966 0.40964191 0.81764442 0.9160704  0.40519023 0.62248053]
+# ---
+# ACDC (Fog)
 # Overall Acc: 0.899750
 # Mean Acc: 0.697483
 # FreqW Acc: 0.826015
 # Mean IoU: 0.599675
-#
-# [0.89968568 0.61364265 0.72526159 0.30592753 0.36195622 0.40860551 0.82659963 0.91106372 0.34895574 0.59505032]
-
+# Per-class IoU: [0.89968568 0.61364265 0.72526159 0.30592753 0.36195622 0.40860551 0.82659963 0.91106372 0.34895574 0.59505032]
+# ---
+# ACDC (Snow)
 # Overall Acc: 0.813452
 # Mean Acc: 0.597240
 # FreqW Acc: 0.690171
 # Mean IoU: 0.502845
-#
-# [0.72744211 0.27268236 0.63459407 0.28343183 0.2544351  0.42002753 0.75314912 0.75577437 0.34386931 0.58304499]
-
+# Per-class IoU: [0.72744211 0.27268236 0.63459407 0.28343183 0.2544351  0.42002753 0.75314912 0.75577437 0.34386931 0.58304499]
+# ---
+# ACDC (Night)
 # Overall Acc: 0.589835
 # Mean Acc: 0.365503
 # FreqW Acc: 0.423166
 # Mean IoU: 0.271261
-#
-# [0.75924663 0.34913799 0.43090425 0.08629936 0.10791564 0.08757231 0.37398767 0.04645397 0.18224199 0.28884528]
-
-
+# Per-class IoU: [0.75924663 0.34913799 0.43090425 0.08629936 0.10791564 0.08757231 0.37398767 0.04645397 0.18224199 0.28884528]

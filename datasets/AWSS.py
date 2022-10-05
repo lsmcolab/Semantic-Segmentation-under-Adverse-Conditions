@@ -96,10 +96,10 @@ class AWSS(data.Dataset):
         for filename in glob.iglob(image_dir + '/**/RGB_Shaky_Fr_*.png', recursive=True):
             if filename.find("RGB_Shaky_Fr_") != -1:
                 # ------------------------------
-                img = filename.replace('/home/kerim/Silver_Project/Silver_Recordings/', '')
+                img = filename.replace('/home/kerim/Silver_Project/AWSS/', '')
                 temp = img.split('/')
                 seq_name, frame_name = temp[0], temp[3]
-                xml_path = '/home/kerim/Silver_Project/Silver_Recordings/' + seq_name + '/Annotations/Textual/TextualInfo.xml'
+                xml_path = '/home/kerim/Silver_Project/AWSS/' + seq_name + '/Annotations/Textual/TextualInfo.xml'
 
                 root_node = ET.parse(xml_path).getroot()
 
@@ -169,8 +169,8 @@ class AWSS(data.Dataset):
 
         FLAG = True#for HRNet
         if split =="test" and FLAG:
-            print("".join("{}	{}\n".format(x.replace("/home/kerim/Silver_Project/Silver_Recordings/",''),
-                                             y.replace("/home/kerim/Silver_Project/Silver_Recordings/",'')) for x, y in zip(self.images, self.targets)))
+            print("".join("{}	{}\n".format(x.replace("/home/kerim/Silver_Project/AWSS/",''),
+                                             y.replace("/home/kerim/Silver_Project/AWSS/",'')) for x, y in zip(self.images, self.targets)))
 
             pass
     def __len__(self):
@@ -198,10 +198,10 @@ class AWSS(data.Dataset):
 
 # get the weather and time labels
         # ------------------------------
-        img = self.images[index].replace('/home/kerim/Silver_Project/Silver_Recordings/', '')
+        img = self.images[index].replace('/home/kerim/Silver_Project/AWSS/', '')
         temp = img.split('/')
         seq_name, frame_name = temp[0], temp[3]
-        xml_path = '/home/kerim/Silver_Project/Silver_Recordings/' + seq_name + '/Annotations/Textual/TextualInfo.xml'
+        xml_path = '/home/kerim/Silver_Project/AWSS/' + seq_name + '/Annotations/Textual/TextualInfo.xml'
 
         root_node = ET.parse(xml_path).getroot()
 
