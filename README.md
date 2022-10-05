@@ -2,7 +2,7 @@
 
 ![alt text](https://github.com/A-Kerim/Semantic-Segmentation-under-Adverse-Conditions/blob/5a8c907a614aa1f72a717ce92b019cdefd835f02/assets/teaser.png "Teaser Figure")
 
-This repository contains the original implementation of the paper Semantic Segmentation under Adverse Conditions: A Weather and Nighttime-aware Synthetic Data-based Approach, published at the BMVC 2022.
+This repository contains the original implementation of the paper Semantic [Segmentation under Adverse Conditions: A Weather and Nighttime-aware Synthetic Data-based Approach](https://bmvc2022.org/programme/papers/), published at the BMVC 2022.
 
 Recent semantic segmentation models perform well under standard weather conditions and sufficient illumination but struggle with adverse weather conditions and nighttime. Collecting and annotating training data under these conditions is expensive, time-consuming, error-prone, and not always practical. Usually, synthetic data is used as a feasible data source to increase the amount of training data. However, just directly using synthetic data may actually harm the model’s performance under normal weather conditions while getting only small gains in adverse situations. Therefore, we present a novel architecture specifically designed for using synthetic training data. We propose a simple yet powerful addition to DeepLabV3+ by using weather and time-of-the-day su-
 pervisors trained with multi-task learning, making it both weather and nighttime aware, which improves its mIoU accuracy by 14 percentage points on the ACDC dataset while maintaining a score of 75% mIoU on the Cityscapes dataset.
