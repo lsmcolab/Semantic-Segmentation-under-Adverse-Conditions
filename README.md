@@ -20,8 +20,8 @@ To reproduce our experiments, please follow these steps:
 
 ### 2. Clone the repo and install the dependencies
    ```bash
-   git clone https://github.com/verlab/TextDrivenVideoAcceleration_TPAMI_2022.git
-   cd TextDrivenVideoAcceleration_TPAMI_2022
+   git clone https://github.com/lsmcolab/Semantic-Segmentation-under-Adverse-Conditions.git
+   cd Semantic-Segmentation-under-Adverse-Conditions
    pip install -r requirements.txt
    ```
 
