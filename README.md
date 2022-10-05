@@ -1,6 +1,6 @@
 # Semantic Segmentation under Adverse Conditions: A Weather and Nighttime-aware Synthetic Data-based Approach
 
-![alt text](https://github.com/A-Kerim/Semantic-Segmentation-under-Adverse-Conditions/blob/5a8c907a614aa1f72a717ce92b019cdefd835f02/assets/teaser.png "Teaser Figure")
+![alt text](https://github.com/lsmcolab/Semantic-Segmentation-under-Adverse-Conditions/blob/658a3eb8c0ead1a4d9f625807ba810a37043b121/assets/teaser.png "Teaser Figure")
 
 This repository contains the original implementation of the paper Semantic [Segmentation under Adverse Conditions: A Weather and Nighttime-aware Synthetic Data-based Approach](https://bmvc2022.org/programme/papers/), published at the BMVC 2022.
 
