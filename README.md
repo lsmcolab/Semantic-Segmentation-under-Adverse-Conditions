@@ -66,7 +66,7 @@ xxxxx
 * Felipe Chamone - PhD Candidate - Universidade Federal de Minas Gerais - cadar@dcc.ufmg.br
 * Washington Ramos - PhD Candidate - UFMG - washington.ramos@dcc.ufmg.br
 * Leandro Soriano Marcolino - Lecturer at Lancaster University - l.marcolino@lancaster.ac.uk
-* Erickson R. do Nascimento - Principal Investigator - UFMG - erickson@dcc.ufmg.br
+* Erickson R. Nascimento - Associate Professor at UFMG - erickson@dcc.ufmg.br
 * Richard Jiang - Associate Professor at Lancaster University - r.jiang2@lancaster.ac.uk 
 ---
 :memo: Citing 
