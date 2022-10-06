@@ -63,7 +63,7 @@ xxxxx
 :e-mail: Contact
 ===
 * Abdulrahman Kerim - PhD Candidate - Lancaster University - a.kerim@lancaster.ac.uk
-* Felipe Chamone - PhD Candidate - Universidade Federal de Minas Gerais - cadar@dcc.ufmg.br
+* Felipe Chamone - PhD Candidate - UFMG - cadar@dcc.ufmg.br
 * Washington Ramos - PhD Candidate - UFMG - washington.ramos@dcc.ufmg.br
 * Leandro Soriano Marcolino - Lecturer at Lancaster University - l.marcolino@lancaster.ac.uk
 * Erickson R. Nascimento - Associate Professor at UFMG - erickson@dcc.ufmg.br
