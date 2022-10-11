@@ -41,7 +41,7 @@ To reproduce our experiments, please follow these steps:
 :hourglass_flowing_sand: Training
 ===
 
-xxxxx
+Coming soon!
 
 ---
 
@@ -49,7 +49,7 @@ xxxxx
 :mag_right: Testing
 ===
 
-xxxxx
+Coming soon!
 
 ---
 
