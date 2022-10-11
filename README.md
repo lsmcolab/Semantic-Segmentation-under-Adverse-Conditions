@@ -65,9 +65,9 @@ Coming soon!
 * Abdulrahman Kerim - PhD Candidate - Lancaster University - a.kerim@lancaster.ac.uk
 * Felipe Chamone - PhD Candidate - UFMG - cadar@dcc.ufmg.br
 * Washington Ramos - PhD Candidate - UFMG - washington.ramos@dcc.ufmg.br
-* Leandro Soriano Marcolino - Lecturer at Lancaster University - l.marcolino@lancaster.ac.uk
-* Erickson R. Nascimento - Associate Professor at UFMG - erickson@dcc.ufmg.br
-* Richard Jiang - Associate Professor at Lancaster University - r.jiang2@lancaster.ac.uk 
+* Leandro Soriano Marcolino - Lecturer (Assistant Professor) at Lancaster University - l.marcolino@lancaster.ac.uk
+* Erickson R. Nascimento -Senior Lecturer (Associate Professor) at UFMG - erickson@dcc.ufmg.br
+* Richard Jiang - Senior Lecturer (Associate Professor) at Lancaster University - r.jiang2@lancaster.ac.uk 
 ---
 :memo: Citing 
 ===
