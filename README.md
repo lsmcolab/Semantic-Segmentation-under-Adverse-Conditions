@@ -65,9 +65,12 @@ https://github.com/lsmcolab/Semantic-Segmentation-under-Adverse-Conditions/blob/
 
 :movie_camera: Results
 ===
-* Quantitative Results:
+* **Quantitative Results:**
+mIoU results for our approach Vs. standard domain adaptation methods. Training our weather and nighttime-aware architecture on both Cityscapes and AWSS, improves the performance on ACDC dataset and achieves adequate peformance on Cityscapes. Best results are bolded. Fnt stands for Fine-Tuned.
 ![alt text](https://github.com/lsmcolab/Semantic-Segmentation-under-Adverse-Conditions/blob/1514c115097a1e8a766ac7634d0509afb52fa81e/assets/Quantitative_Results_BMVC_2022.png "Teaser Figure")
-* Qualitative Results:
+
+* **Qualitative Results:**
+Visual comparison between baselines and our approach. Segmentation results are shown on ACDC and Cityscapes dataset, respectively.
 ![alt text](https://github.com/lsmcolab/Semantic-Segmentation-under-Adverse-Conditions/blob/b88cf8d0437bd38c891ee6fe5411f73339a0ecc5/assets/Qualitative_Results_BMVC2022.png "Teaser Figure")
 ---
 :e-mail: Contact
