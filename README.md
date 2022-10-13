@@ -40,16 +40,19 @@ To reproduce our experiments, please follow these steps:
 
 :hourglass_flowing_sand: Training
 ===
-
-Coming soon!
-
+Please update the following line:
+* To train using both datasets Cityscapes and AWSS, select MODE = 0. 
+https://github.com/lsmcolab/Semantic-Segmentation-under-Adverse-Conditions/blob/00b4c76293b6e633e416f7bc45ee7b27dfadd8c8/main.py#L603
 ---
 
 
 :mag_right: Testing
 ===
+Please update the following lines: 
+* To test your trained model on Cityscapes, select MODE = 11.
+* To test your trained model on ACDC, select MODE = 21.
+https://github.com/lsmcolab/Semantic-Segmentation-under-Adverse-Conditions/blob/00b4c76293b6e633e416f7bc45ee7b27dfadd8c8/main.py#L604-L605
 
-Coming soon!
 
 ---
 
@@ -66,7 +69,7 @@ Coming soon!
 * Felipe Chamone - PhD Candidate - UFMG - cadar@dcc.ufmg.br
 * Washington Ramos - PhD Candidate - UFMG - washington.ramos@dcc.ufmg.br
 * Leandro Soriano Marcolino - Lecturer (Assistant Professor) at Lancaster University - l.marcolino@lancaster.ac.uk
-* Erickson R. Nascimento -Senior Lecturer (Associate Professor) at UFMG - erickson@dcc.ufmg.br
+* Erickson R. Nascimento - Senior Lecturer (Associate Professor) at UFMG - erickson@dcc.ufmg.br
 * Richard Jiang - Senior Lecturer (Associate Professor) at Lancaster University - r.jiang2@lancaster.ac.uk 
 ---
 :memo: Citing 
