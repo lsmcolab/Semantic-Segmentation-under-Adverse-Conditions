@@ -63,7 +63,7 @@ https://github.com/lsmcolab/Semantic-Segmentation-under-Adverse-Conditions/blob/
 * The Silver simulator can be downloaded using this link: [Silver](https://livelancsac-my.sharepoint.com/:u:/g/personal/kerim_lancaster_ac_uk/EZFZP1An4B9PmHKDEhaxjGYBWfVXfD8Kfu-yvPOaBpXg8w?e=f0MECt).
 ---
 
-:movie_camera: Results
+:dart: Results
 ===
 * **Quantitative Results:**
 mIoU results for our approach Vs. standard domain adaptation methods. Training our weather and nighttime-aware architecture on both Cityscapes and AWSS, improves the performance on ACDC dataset and achieves adequate peformance on Cityscapes. Best results are bolded. Fnt stands for Fine-Tuned.
